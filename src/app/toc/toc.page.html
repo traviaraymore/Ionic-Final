@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>TOC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngFor="let chapter of chapters">
+<ion-list [routerDirection]="'forward'" [routerLink]="chapter.url">
+  
+  <ion-item>
+{{chapter.title}}
+{{chapter.url}}
+  </ion-item>
+</ion-list>
+</ion-content>
